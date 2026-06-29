@@ -1,6 +1,8 @@
+"use client";
+
 import CubeSticker from "./CubeSticker";
 import { ThreeEvent } from "@react-three/fiber";
-
+export {};
 interface FaceProps {
   colors: string[];        // 9 colors, top-left to bottom-right
   position: [number, number, number];

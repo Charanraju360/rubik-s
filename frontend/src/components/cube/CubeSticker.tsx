@@ -1,3 +1,5 @@
+"use client";
+
 import { ThreeEvent } from "@react-three/fiber";
 
 interface StickerProps {
@@ -6,14 +8,14 @@ interface StickerProps {
   onClick?: (e: ThreeEvent<MouseEvent>) => void;
 }
 
-const COLOR_MAP: Record<string, string> = {
-  W: "#ffffff", // White
-  Y: "#ffd500", // Yellow
-  R: "#ff3000", // Red
-  O: "#ff8c00", // Orange
-  B: "#0045ad", // Blue
-  G: "#009b48", // Green
-  X: "#1a1a1a", // Unknown / unset
+export const COLOR_MAP: Record<string, string> = {
+  W: "#ffffff",
+  Y: "#ffd500",
+  R: "#ff3000",
+  O: "#ff8c00",
+  B: "#0045ad",
+  G: "#009b48",
+  X: "#222222",
 };
 
 export default function CubeSticker({ position, color, onClick }: StickerProps) {
